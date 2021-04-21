@@ -52,7 +52,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const stripeCheckoutSession = await stripe.checkout.sessions.create({
       customer: stripeCustomerId,
       payment_method_types: ['card'],
-      billing_address_collection: 'required',
+      billing_address_collection: 'auto',
       line_items: [
         { price: 'price_1IapoMBsqDW0yrOXDyqVU0Sc', quantity: 1 }
       ],
