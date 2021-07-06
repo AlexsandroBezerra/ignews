@@ -15,9 +15,7 @@ describe("SignInButton component", () => {
 
     expect(screen.getByText('Sign in with Github')).toBeInTheDocument()
   })
-})
 
-describe("SignInButton component", () => {
   it('renders correctly when user is authenticated', () => {
     const useSessionMocked = mocked(useSession)
     useSessionMocked.mockReturnValueOnce([

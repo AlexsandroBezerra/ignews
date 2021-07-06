@@ -31,7 +31,7 @@ export default function Home(props: HomeProps) {
             <span>for {props.product.amount} month</span>
           </p>
 
-          <SubscribeButton priceId={props.product.priceId} />
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="Girl coding"/>
