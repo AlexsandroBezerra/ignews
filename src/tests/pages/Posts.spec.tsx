@@ -10,7 +10,7 @@ const posts = [
   { slug: 'my-new-post', title: 'My new post', excerpt: 'Post excerpt', updatedAt: 'March, 10' }
 ]
 
-describe('Home page', () => {
+describe('Posts page', () => {
   it('renders correctly', () => {
     render(<Posts posts={posts} />)
 
