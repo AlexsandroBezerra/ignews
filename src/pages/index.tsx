@@ -14,7 +14,6 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-  console.log(process.env.VERCEL_URL)
   return (
     <>
       <Head>

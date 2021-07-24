@@ -58,8 +58,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       ],
       mode: 'subscription',
       allow_promotion_codes: true,
-      success_url: `${process.env.VERCEL_URL}/post`,
-      cancel_url: process.env.VERCEL_URL
+      success_url: `https://${process.env.VERCEL_URL}/post`,
+      cancel_url: `https://${process.env.VERCEL_URL}`
     })
 
     return res.status(200).json({ sessionId: stripeCheckoutSession.id })
