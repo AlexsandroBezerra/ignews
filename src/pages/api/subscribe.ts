@@ -58,7 +58,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       ],
       mode: 'subscription',
       allow_promotion_codes: true,
-      success_url: process.env.VERCEL_URL + '/post',
+      success_url: `${process.env.VERCEL_URL}/post`,
       cancel_url: process.env.VERCEL_URL
     })
 
